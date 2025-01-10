@@ -2,11 +2,11 @@ package q10828;
 
 import java.util.Scanner;
 
-public class Q10928 {
+public class Q10828 {
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
 		int N = sc.nextInt();
-		Stack stk = new Stack(N);
+		NumStk stk = new NumStk(N);
 		for(int i=0; i<N; i++) {
 			String cmd = sc.next();
 			
@@ -33,11 +33,11 @@ public class Q10928 {
 	}
 }
 
-class Stack {
+class NumStk {
 	private int[] n;
 	private int top;
 	
-	public Stack(int p) {
+	public NumStk(int p) {
 		n = new int[p];
 		top = -1;
 	}
